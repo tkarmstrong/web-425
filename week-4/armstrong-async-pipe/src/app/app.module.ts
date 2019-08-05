@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  Assignment 4.4 - Async Pipe
+; Author: Tyler Armstrong
+; Date:   04 Aug 2019
+; Modified By: N/A
+; Description: Async Pipe
+;===========================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

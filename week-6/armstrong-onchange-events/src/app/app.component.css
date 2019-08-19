@@ -1,0 +1,22 @@
+.sideNav {
+  height: 89.5vh;
+  padding: 10px;
+  border-right: 1px solid #333333;
+}
+
+.inputStyle {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  border: 1px solid #333333;
+}
+
+.inputMargin {
+  margin: 5px 50px;
+}
+
+.parentHeader {
+  margin-left: 50px;
+}

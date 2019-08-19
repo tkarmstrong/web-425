@@ -1,0 +1,9 @@
+.sideNav {
+  border: 1px solid #673ab7;
+  height: 89.5vh;
+}
+
+.stockAmount {
+  height: 200px;
+  text-align: center;
+}

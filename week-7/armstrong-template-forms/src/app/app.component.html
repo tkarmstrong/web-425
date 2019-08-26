@@ -1,0 +1,79 @@
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="toolbar__icon-button mat-button">
+      <mat-icon>web</mat-icon>
+      <span style="margin-left: 5px !important">Web 425</span>
+    </button>
+
+    <div fxFlex></div>
+
+    <!-- User Profile -->
+    <button
+      class="toolbar__icon-button"
+      [matMenuTriggerFor]="menu"
+      mat-icon-button
+    >
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>perm_contact_calendar</mat-icon>
+        <span>My Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span></button
+      ><button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <p></p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-card class="card-container">
+      <mat-card-title class="card-title">Login Form</mat-card-title>
+      <mat-card-content class="card-content">
+
+        <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+          <mat-form-field class="full-width">
+              <input matInput type="text" placeholder="Username" name="username" ngModel>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+              <input matInput type="text" placeholder="SSN" name="ssn" ngModel>
+          </mat-form-field>
+
+          <div ngModelGroup="passwordsGroup">
+
+              <mat-form-field class="full-width">
+                  <input matInput type="password" placeholder="Password" name="password" ngModel>
+              </mat-form-field>
+
+              <mat-form-field class="full-width">
+                  <input matInput type="password" placeholder="Confirm Password" name="cPassword" ngModel>
+              </mat-form-field>
+          </div>
+          <mat-card-actions>
+            <div fxFlex></div>
+            <button mat-raised-button class="submit-btn" type="submit">Submit</button>
+          </mat-card-actions>
+
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+

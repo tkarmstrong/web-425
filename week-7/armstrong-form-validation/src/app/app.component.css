@@ -1,0 +1,48 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+}
+
+.sidenav-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.card-container {
+  margin: 50px;
+}
+
+.card-content {
+  width: 80%;
+  padding: 40px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.error {
+  color: red;
+}
+
+.hasError {
+  border: 1px solid red;
+}

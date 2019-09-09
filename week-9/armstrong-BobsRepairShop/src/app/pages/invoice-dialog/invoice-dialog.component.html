@@ -1,0 +1,27 @@
+<div mat-dialog-content fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%">
+  <section class="customer-info" fxFlex="30%">
+    <h1 mat-dialog-title>Invoice Summary</h1>
+    <p><span class="mat-body-4 primary-text-color">Date: </span>{{this.data.date}}</p>
+    <p><span class="mat-body-4 primary-text-color" color="primary">Customer: </span>Some Name</p>
+    <p><span class="mat-body-4 primary-text-color">Phone: </span>123-456-7890</p>
+    <p><span class="mat-body-4 primary-text-color">Email: </span>name@email.com</p>
+  </section>
+  <section class="invoice-info" fxFlex="70%">
+    <h3>Services</h3>
+    <p><mat-icon>verified_user</mat-icon><span class="primary-text-color">  Password Reset: </span>${{this.data.passwordReset}}</p>
+    <p><mat-icon>visibility_off</mat-icon><span class="primary-text-color">  Spyware Removal: </span>${{this.data.spywareRemoval}}</p>
+    <p><mat-icon>memory</mat-icon><span class="primary-text-color">  Ram Upgrade: </span>${{this.data.ramUpgrade}}</p>
+    <p><mat-icon>developer_board</mat-icon><span class="primary-text-color">  Software Installation: </span>${{this.data.softwareInstallation}}</p>
+    <p><mat-icon>build</mat-icon><span class="primary-text-color">  Tune Up: </span>${{this.data.tuneup}}</p>
+    <p><mat-icon>keyboard</mat-icon><span class="primary-text-color">  Keyboard Cleaning: </span>${{this.data.keyboardCleaning}}</p>
+    <p><mat-icon>disc_full</mat-icon><span class="primary-text-color">  Disc Cleanup: </span>${{this.data.discCleanup}}</p>
+    <mat-divider></mat-divider>
+    <p><span class="primary-text-color">  Labor: </span>${{this.data.labor}}</p>
+    <p><span class="primary-text-color">  Parts: </span>${{this.data.parts}}</p>
+    <mat-divider></mat-divider>
+    <h1 class="primary-text-color">Total: ${{this.data.total}}</h1>
+    <div style="float: right;" mat-dialog-actions>
+      <button mat-raised-button color="primary" [mat-dialog-close]="data">CLOSE</button>
+    </div>
+  </section>
+</div>
